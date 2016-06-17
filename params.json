@@ -1,0 +1,6 @@
+{
+  "name": "Birnn",
+  "tagline": "Bidirectional RNN [GRU + LSTM] for language identification using Signal Features and MFCC",
+  "body": "# biRNN\r\nBidirectional RNN [GRU + LSTM] for language identification using SSC\r\n\r\nFirst run setup.py as \"python setup.py install\" to install the MFCC and other DCT based features\r\n\r\nConvert your audio files using Audacity or any other sound editing tool to a 16-bit PCM Wav format\r\n\r\nAdd an \"e\" or an \"s\" to the filename at the beginning based on whether it is in English or Spanish \r\ne.g. Platero y Yo (spanish) -> \"splateroyyo.wav\"\r\n\r\nrun gen_features.py \r\n\r\nThis will generate 2 set of features - \r\n\t1. Signal features in the frequency domain divided into blocks\r\n\t2. MFCC features (or whichever you want from the 'features' folder)\r\n\r\nGive these as input to you NN architecture.\r\n\r\nFor best results - Signal features to a ConvNet and MFCC directly to an LSTM or GRU\r\n\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
